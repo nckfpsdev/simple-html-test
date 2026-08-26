@@ -1,24 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div>
+      <header>
+        <h1>Meu Site de Teste</h1>
+        <nav>
+          <a href="/">Início</a>
+          <a href="/sobre">Sobre</a>
+          <a href="/contato">Contato</a>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h2>Bem-vindo!</h2>
+          <p>Este é um site HTML simples criado para testes. Ele não usa folhas de estilo CSS.</p>
+        </section>
+
+        <section>
+          <h3>Coisas que gosto</h3>
+          <ul>
+            <li>HTML puro</li>
+            <li>Páginas leves</li>
+            <li>Simplicidade</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Contato</h3>
+          <p>Envie um e-mail para: <a href="mailto:teste@exemplo.com">teste@exemplo.com</a></p>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2026 - Site de teste. Todos os direitos reservados.</p>
+      </footer>
     </div>
   );
 }
+
