@@ -8,7 +8,9 @@ function Index() {
   return (
     <div>
       <header>
-        <h1>Meu Site de Teste</h1>
+        <h1>
+          <strong>Meu Site de Teste</strong>
+        </h1>
         <nav>
           <a href="/">Início</a>
           <a href="/sobre">Sobre</a>
@@ -19,7 +21,10 @@ function Index() {
       <main>
         <section>
           <h2>Bem-vindo!</h2>
-          <p>Este é um site HTML simples criado para testes. Ele não usa folhas de estilo CSS.</p>
+          <p>
+            Este é um site HTML simples criado para testes. Ele não usa folhas
+            de estilo CSS.
+          </p>
         </section>
 
         <section>
@@ -33,7 +38,10 @@ function Index() {
 
         <section>
           <h3>Contato</h3>
-          <p>Envie um e-mail para: <a href="mailto:teste@exemplo.com">teste@exemplo.com</a></p>
+          <p>
+            Envie um e-mail para:{" "}
+            <a href="mailto:teste@exemplo.com">teste@exemplo.com</a>
+          </p>
         </section>
       </main>
 
@@ -43,4 +51,3 @@ function Index() {
     </div>
   );
 }
-
